@@ -3,7 +3,13 @@ import os
 from flask import Flask, request, jsonify, abort, render_template, redirect, url_for, session, escape
 
 import json
+data={    
+}    
 
+with open("static\geojson\mexicoHigh.json","r") as r:
+         data=json.load(r)
+
+print(data)
 
 # Config Flask
 app = Flask(__name__)
@@ -12,7 +18,6 @@ app.config.update(
     DEBUG=True,
     JSON_SORT_KEYS=True
 )
-
 
 # Root
 @app.route('/')

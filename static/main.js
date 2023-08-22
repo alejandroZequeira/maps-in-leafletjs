@@ -26,7 +26,6 @@ region.addEventListener("change",function(){
             console.log("entro a la primera opcion")
             geoJsonCP("24_SanLuisPotosi.json")
             map.flyTo([22.1498200,-100.9791600],8)
-            L.geoJson(statesData.features,{style:{color: "#7AE9EE"}}).addTo(map)
             break;
         }
         default:
@@ -45,4 +44,5 @@ function geoJsonCP(id){
         statesData=JSON.parse(res)
     });
 }
+L.geoJson(data.features,{style:{color: "#7AE9EE"}}).addTo(map)
 map.on("click", onMapClick)
