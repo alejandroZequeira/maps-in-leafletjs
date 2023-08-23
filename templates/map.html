@@ -1,32 +1,47 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>interactive map</title>
+    </head>
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin />
+    <link rel="stylesheet" href="static/main.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8" />
-    <title>interactive map</title>
-</head>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<link rel="stylesheet" href="static/main.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<body>
-    <div class="nabvar navbar-expand-sm bg-dark navbar-dark p-3">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <div class="col">
-                    <label class="nav-link" for="estado">Estado: </label>
-                    <select class="form-select " id="estado">
-                        <option value="0">ninguna</option>
-                    </select>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div id="map"></div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script src="static/main.js"></script>
-
+    <body>
+        <div class="nabvar navbar-expand-sm bg-dark navbar-dark p-3">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="row">
+                        <div class="col">
+                            <label class="nav-link" for="estado">Estado:
+                            </label>
+                            <select class="form-select " id="estado">
+                                <option value="0">ninguna</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label class="nav-link" for="municipio">Municipio:
+                            </label>
+                            <select class="form-select " id="municipio">
+                                <option value="0">ninguna</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="map"></div>
+    </body>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin></script>
+    <script src="static/main.js"></script>
 </html>
