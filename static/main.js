@@ -16,7 +16,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map)
 
-map.on("click", onMapClick)
+//map.on("click", onMapClick)
 
 legend.onAdd = function (map) {
     var div = L.DomUtil.create("div", "info legend")
